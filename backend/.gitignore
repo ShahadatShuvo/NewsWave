@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Development/IDE files
+*.bak
+*.swp
+.vscode/
+*.pydevproject
+*.idea/
+*.DS_Store
+
+# Local development settings
+local_settings.py
+
+# Database files
+db.sqlite3
+
+# Static files collected by Django's "collectstatic" command
+staticfiles/
+
+# Media files (uploaded user files)
+media/
+
+# Virtual environment
+venv/
+env/
+*.env
+
+# Log files
+*.log
+
+# Ignore migrations (uncomment if you're using South)
+# /<app_name>/migrations/
+
+# Ignore compiled Python files in the 'site-packages' directory
+# (if you are using virtualenv)
+# /lib/python*/site-packages/
+
+# Ignore pytest cache directory
+# .pytest_cache/
+
+# Ignore coverage report directory
+# htmlcov/
+
+# Ignore pipenv virtual environment
+# .venv/
+
+# Ignore Jupyter Notebook checkpoints
+# .ipynb_checkpoints/
+
+# Ignore .pyc files in the project root
+# /*.pyc
