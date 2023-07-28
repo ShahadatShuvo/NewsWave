@@ -3,9 +3,9 @@ import "../../../utils/css/style.css";
 import "../../../utils/css/theme.css";
 function MainCategories() {
   return (
-    <div>
+    <div className="my-8">
       <main id="content">
-        <div className="bg-gray-50 py-4 hidden">
+        <div className="bg-gray-50 py-4   hidden">
           <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
             <div className="mx-auto table text-center text-sm">
               <a className="uppercase" href="#">
@@ -13,6 +13,7 @@ function MainCategories() {
               </a>
               <a href="#">
                 <Image
+                  layout="responsive"
                   src="/img/ads/ads_728.jpg"
                   alt="advertisement area"
                   width={100}
@@ -30,6 +31,7 @@ function MainCategories() {
                 <div className="relative hover-img max-h-98 overflow-hidden">
                   <a href="#">
                     <Image
+                      layout="responsive"
                       height={100}
                       width={100}
                       className="max-w-full w-full mx-auto h-auto"
@@ -65,6 +67,7 @@ function MainCategories() {
                     <div className="relative hover-img max-h-48 overflow-hidden">
                       <a href="#">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto h-auto"
@@ -92,6 +95,7 @@ function MainCategories() {
                     <div className="relative hover-img max-h-48 overflow-hidden">
                       <a href="#">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto h-auto"
@@ -119,6 +123,7 @@ function MainCategories() {
                     <div className="relative hover-img max-h-48 overflow-hidden">
                       <a href="#">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto h-auto"
@@ -145,6 +150,7 @@ function MainCategories() {
                     <div className="relative hover-img max-h-48 overflow-hidden">
                       <a href="#">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto h-auto"
@@ -174,7 +180,7 @@ function MainCategories() {
           </div>
         </div>
 
-        <div className="bg-white">
+        <div className="bg-white text-gray-700">
           <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
             <div className="flex flex-row flex-wrap">
               <div className="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
@@ -189,6 +195,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -197,8 +204,8 @@ function MainCategories() {
                         />
                       </a>
                       <div className="py-0 sm:py-3 pl-3 sm:pl-0">
-                        <h3 className="text-lg font-bold leading-tight mb-2">
-                          <a href="#">
+                        <h3 className="text-lg font-bold leading-tight mb-2 text-black">
+                          <a href="#" className="text-black">
                             5 Tips to Save Money Booking Your Next Hotel Room
                           </a>
                         </h3>
@@ -217,6 +224,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -245,6 +253,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -273,6 +282,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -301,6 +311,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -329,6 +340,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -365,6 +377,7 @@ function MainCategories() {
                       </a>
                       <a href="#">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="mx-auto"
@@ -380,200 +393,7 @@ function MainCategories() {
           </div>
         </div>
 
-        <div
-          className="relative bg-gray-50"
-          style={{
-            backgroundImage: "url('src/img/bg.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-            backgroundAttachment: "fixed",
-          }}
-        >
-          <div className="bg-black bg-opacity-70">
-            <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
-              <div className="flex flex-row flex-wrap">
-                <div className="flex-shrink max-w-full w-full py-12 overflow-hidden">
-                  <div className="w-full py-3">
-                    <h2 className="text-white text-2xl font-bold text-shadow-black">
-                      <span className="inline-block h-5 border-l-3 border-red-600 mr-2"></span>
-                      American
-                    </h2>
-                  </div>
-                  <div id="post-carousel" className="splide post-carousel">
-                    <div className="splide__track">
-                      <ul className="splide__list">
-                        <li className="splide__slide">
-                          <div className="w-full pb-3">
-                            <div className="hover-img bg-white">
-                              <a href="">
-                                <Image
-                                  height={100}
-                                  width={100}
-                                  className="max-w-full w-full mx-auto"
-                                  src="/img/dummy/img14.jpg"
-                                  alt="alt title"
-                                />
-                              </a>
-                              <div className="py-3 px-6">
-                                <h3 className="text-lg font-bold leading-tight mb-2">
-                                  <a href="#">
-                                    5 Tips to Save Money Booking Your Next Hotel
-                                    Room
-                                  </a>
-                                </h3>
-                                <a className="text-gray-500" href="#">
-                                  <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
-                                  Europe
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="splide__slide">
-                          <div className="w-full pb-3">
-                            <div className="hover-img bg-white">
-                              <a href="">
-                                <Image
-                                  height={100}
-                                  width={100}
-                                  className="max-w-full w-full mx-auto"
-                                  src="/img/dummy/img15.jpg"
-                                  alt="alt title"
-                                />
-                              </a>
-                              <div className="py-3 px-6">
-                                <h3 className="text-lg font-bold leading-tight mb-2">
-                                  <a href="#">
-                                    5 Tips to Save Money Booking Your Next Hotel
-                                    Room
-                                  </a>
-                                </h3>
-                                <a className="text-gray-500" href="#">
-                                  <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
-                                  Europe
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="splide__slide">
-                          <div className="w-full pb-3">
-                            <div className="hover-img bg-white">
-                              <a href="">
-                                <Image
-                                  height={100}
-                                  width={100}
-                                  className="max-w-full w-full mx-auto"
-                                  src="/img/dummy/img16.jpg"
-                                  alt="alt title"
-                                />
-                              </a>
-                              <div className="py-3 px-6">
-                                <h3 className="text-lg font-bold leading-tight mb-2">
-                                  <a href="#">
-                                    5 Tips to Save Money Booking Your Next Hotel
-                                    Room
-                                  </a>
-                                </h3>
-                                <a className="text-gray-500" href="#">
-                                  <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
-                                  Europe
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="splide__slide">
-                          <div className="w-full pb-3">
-                            <div className="hover-img bg-white">
-                              <a href="">
-                                <Image
-                                  height={100}
-                                  width={100}
-                                  className="max-w-full w-full mx-auto"
-                                  src="/img/dummy/img17.jpg"
-                                  alt="alt title"
-                                />
-                              </a>
-                              <div className="py-3 px-6">
-                                <h3 className="text-lg font-bold leading-tight mb-2">
-                                  <a href="#">
-                                    5 Tips to Save Money Booking Your Next Hotel
-                                    Room
-                                  </a>
-                                </h3>
-                                <a className="text-gray-500" href="#">
-                                  <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
-                                  Europe
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="splide__slide">
-                          <div className="w-full pb-3">
-                            <div className="hover-img bg-white">
-                              <a href="">
-                                <Image
-                                  height={100}
-                                  width={100}
-                                  className="max-w-full w-full mx-auto"
-                                  src="/img/dummy/img18.jpg"
-                                  alt="alt title"
-                                />
-                              </a>
-                              <div className="py-3 px-6">
-                                <h3 className="text-lg font-bold leading-tight mb-2">
-                                  <a href="#">
-                                    5 Tips to Save Money Booking Your Next Hotel
-                                    Room
-                                  </a>
-                                </h3>
-                                <a className="text-gray-500" href="#">
-                                  <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
-                                  Europe
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="splide__slide">
-                          <div className="w-full pb-3">
-                            <div className="hover-img bg-white">
-                              <a href="">
-                                <Image
-                                  height={100}
-                                  width={100}
-                                  className="max-w-full w-full mx-auto"
-                                  src="/img/dummy/img1.jpg"
-                                  alt="alt title"
-                                />
-                              </a>
-                              <div className="py-3 px-6">
-                                <h3 className="text-lg font-bold leading-tight mb-2">
-                                  <a href="#">
-                                    5 Tips to Save Money Booking Your Next Hotel
-                                    Room
-                                  </a>
-                                </h3>
-                                <a className="text-gray-500" href="#">
-                                  <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
-                                  Europe
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white py-6">
+        <div className="bg-white py-6  text-gray-700">
           <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
             <div className="flex flex-row flex-wrap">
               <div className="flex-shrink max-w-full w-full overflow-hidden">
@@ -588,6 +408,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -616,6 +437,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -644,6 +466,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -672,6 +495,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -700,6 +524,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -728,6 +553,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -756,6 +582,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -784,9 +611,10 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
-                          className="max-w-full w-full mx-auto"
+                          className="max-w-full w-full mx-auto h-auto"
                           src="/img/dummy/img26.jpg"
                           alt="alt title"
                         />
@@ -814,7 +642,7 @@ function MainCategories() {
           </div>
         </div>
 
-        <div className="bg-gray-50 py-6">
+        <div className=" text-gray-700 bg-gray-50 py-6">
           <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
             <div className="flex flex-row flex-wrap">
               <div className="flex-shrink max-w-full w-full lg:w-2/3  overflow-hidden">
@@ -829,6 +657,7 @@ function MainCategories() {
                     <div className="relative hover-img max-h-98 overflow-hidden">
                       <a href="#">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto h-auto"
@@ -863,18 +692,19 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
-                          className="max-w-full w-full mx-auto"
+                          className="max-w-full w-full mx-auto h-auto"
                           src="/img/dummy/img27.jpg"
                           alt="alt title"
                         />
                       </a>
                       <div className="py-0 sm:py-3 pl-3 sm:pl-0">
-                        <h3 className="text-lg font-bold leading-tight mb-2">
-                          <a href="#">
+                        <h3 className="text-lg font-bold  leading-tight mb-2">
+                          <span className="text-black">
                             5 Tips to Save Money Booking Your Next Hotel Room
-                          </a>
+                          </span>
                         </h3>
                         <p className="hidden md:block text-gray-600 leading-tight mb-1">
                           This is a wider card with supporting text below as a
@@ -891,9 +721,10 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
-                          className="max-w-full w-full mx-auto"
+                          className="max-w-full w-full mx-auto h-auto"
                           src="/img/dummy/img3.jpg"
                           alt="alt title"
                         />
@@ -919,6 +750,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -947,9 +779,10 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
-                          className="max-w-full w-full mx-auto"
+                          className="max-w-full w-full mx-auto h-auto"
                           src="/img/dummy/img5.jpg"
                           alt="alt title"
                         />
@@ -975,6 +808,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -1003,6 +837,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -1089,9 +924,10 @@ function MainCategories() {
                     </a>
                     <a href="#">
                       <Image
+                        layout="responsive"
                         height={100}
                         width={100}
-                        className="mx-auto"
+                        className="max-w-full w-full mx-auto h-auto"
                         src="/img/ads/250.jpg"
                         alt="advertisement area"
                       />
@@ -1103,7 +939,7 @@ function MainCategories() {
           </div>
         </div>
 
-        <div className="bg-gray-50 py-6">
+        <div className=" text-gray-700 bg-gray-50 py-6">
           <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
             <div className="flex flex-row flex-wrap">
               <div className="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
@@ -1118,6 +954,7 @@ function MainCategories() {
                     <div className="relative hover-img max-h-98 overflow-hidden">
                       <a href="#">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto h-auto"
@@ -1152,6 +989,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -1180,6 +1018,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -1208,6 +1047,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -1236,6 +1076,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -1264,6 +1105,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -1292,6 +1134,7 @@ function MainCategories() {
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
                         <Image
+                          layout="responsive"
                           height={100}
                           width={100}
                           className="max-w-full w-full mx-auto"
@@ -1378,9 +1221,10 @@ function MainCategories() {
                     </a>
                     <a href="#">
                       <Image
+                        layout="responsive"
                         height={100}
                         width={100}
-                        className="mx-auto"
+                        className="max-w-full w-full mx-auto h-auto"
                         src="/img/ads/250.jpg"
                         alt="advertisement area"
                       />
