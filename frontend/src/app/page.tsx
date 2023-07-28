@@ -8,10 +8,9 @@ export default function Home() {
     <div>
       <Navbar />
       <div className="my-8">
-        {" "}
         <MainCategories />
       </div>
-      <SingleNews />
+      {/* <SingleNews />  */}
       <Footer />
     </div>
   );
