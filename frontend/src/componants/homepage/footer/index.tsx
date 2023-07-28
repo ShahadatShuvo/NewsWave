@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "../../../utils/css/style.css";
 import "../../../utils/css/theme.css";
 
@@ -17,12 +16,6 @@ function Footer() {
                   <span className="text-3xl leading-normal mb-2 font-bold text-gray-100 mt-2">
                     TailNews
                   </span>
-                  <Image
-                    src="/src/img-min/logo.png"
-                    alt="LOGO"
-                    height={100}
-                    width={100}
-                  />
                 </div>
                 <p>
                   Tailwind News Template for build great newspapper, magazine

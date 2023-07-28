@@ -1,8 +1,13 @@
-import React from "react";
-import "../../../utils/css/theme.css";
+"use client";
+import { useState } from "react";
 import "../../../utils/css/style.css";
+import "../../../utils/css/theme.css";
 
 function Navbar() {
+  const [showHamburger, setshowHamburger] = useState(false);
+  const handleMenuClick = () => {
+    setshowHamburger(!showHamburger);
+  };
   return (
     <div>
       <header className="fixed top-0 left-0 right-0 z-50">
@@ -320,7 +325,10 @@ function Navbar() {
                     </div>
                   </div>
 
-                  <div className="relative hover:bg-gray-800 block lg:hidden">
+                  <div
+                    onClick={handleMenuClick}
+                    className="relative hover:bg-gray-800 block lg:hidden"
+                  >
                     <button
                       type="button"
                       className="menu-mobile block py-3 px-6 border-b-2 border-transparent"
@@ -344,6 +352,8 @@ function Navbar() {
                       Menu
                     </button>
                   </div>
+
+                  {/* Mobile Menu */}
                 </div>
               </div>
             </div>
