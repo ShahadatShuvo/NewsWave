@@ -325,12 +325,9 @@ function Navbar() {
                     </div>
                   </div>
 
-                  <div
-                    onClick={handleMenuClick}
-                    className="relative hover:bg-gray-800 block lg:hidden"
-                  >
+                  <div className="relative lg:hidden">
                     <button
-                      type="button"
+                      onClick={handleMenuClick}
                       className="menu-mobile block py-3 px-6 border-b-2 border-transparent"
                     >
                       <span className="sr-only">Mobile menu</span>
@@ -343,14 +340,63 @@ function Navbar() {
                         aria-hidden="true"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
                           d="M4 6h16M4 12h16M4 18h16"
                         ></path>
                       </svg>
                       Menu
                     </button>
+
+                    {showHamburger && (
+                      <div className="absolute top-12 right-0 bg-black p-4 shadow-lg">
+                        <div className="mb-auto">
+                          <nav className="relative flex flex-wrap">
+                            <ul
+                              id="side-menu"
+                              className="w-full float-none flex flex-col"
+                            >
+                              <li className="relative">
+                                <a
+                                  href="#"
+                                  className="block pb-2 px-5 border-b border-gray-100 hover:bg-gray-50"
+                                >
+                                  Home
+                                </a>
+                              </li>
+
+                              <li className="relative">
+                                <a
+                                  href="#"
+                                  className="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50"
+                                >
+                                  Sport
+                                </a>
+                              </li>
+
+                              <li className="relative">
+                                <a
+                                  href="#"
+                                  className="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50"
+                                >
+                                  Travel
+                                </a>
+                              </li>
+
+                              <li className="relative">
+                                <a
+                                  href="#"
+                                  className="block py-2 px-5 border-b border-gray-100 hover:bg-gray-50"
+                                >
+                                  Techno
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   {/* Mobile Menu */}
