@@ -50,9 +50,7 @@ class UserChangeForm(forms.ModelForm):
         model = User
 
         fields = ["email", "password", "first_name", "last_name",
-                  "gender", "phone_number", "country", "state", "city",
-                  "zip_code", "image_url",
-                  "date_of_birth", "is_active", "is_admin"]
+                  "gender",  "image_url", "is_active", "is_admin"]
 
 
 class UserAdmin(BaseUserAdmin):
@@ -63,15 +61,14 @@ class UserAdmin(BaseUserAdmin):
     # The fields to be used in displaying the User model.
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
-    list_display = ["id", "email", "img_preview", "first_name", "last_name",
-                    "gender", "phone_number", "country", "state", "city",
-                    "zip_code", "created_at", "updated_at",
-                    "date_of_birth", "is_active", "is_admin"]
-    list_filter = ["is_admin", "is_active", "gender", "country", "state"]
+    list_display = ["email", "id",  "img_preview", "first_name", "last_name",
+                    "gender", 'about', 'website_url', 'facebook_url', 'twitter_url', 'instagram_url', "created_at", "updated_at",
+                    "is_active", "is_admin"]
+    list_filter = ["is_admin", "is_active", "gender"]
     fieldsets = [
         ("Basic Info", {"fields": ["email", "password"]}),
-        ("Personal info", {"fields": ["date_of_birth", "first_name", "last_name", "gender", "phone_number",
-         "country", "state", "city", "zip_code", "image_url"]}),
+        ("Personal info", {"fields": [
+         "date_of_birth", "first_name", "last_name", "gender" "image_url", 'about', 'website_url', 'facebook_url', 'twitter_url', 'instagram_url',]}),
         ("Permissions", {"fields": ["is_admin"]}),
     ]
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin
@@ -85,8 +82,7 @@ class UserAdmin(BaseUserAdmin):
             },
         ),
     ]
-    search_fields = ["email", "first_name", "last_name",
-                     "phone_number", "country", "state", "city", "zip_code"]
+    search_fields = ["email", "first_name", "last_name"]
     ordering = ["email"]
     filter_horizontal = []
 
