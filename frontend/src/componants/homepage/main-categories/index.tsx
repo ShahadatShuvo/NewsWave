@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "../../../utils/css/style.css";
 import "../../../utils/css/theme.css";
+import Link from "next/link";
 function MainCategories() {
   return (
     <div className="my-8">
@@ -193,7 +194,7 @@ function MainCategories() {
                 <div className="flex flex-row flex-wrap -mx-3">
                   <div className="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
                     <div className="flex flex-row sm:block hover-img">
-                      <a href="">
+                      <Link href="/news/detail/1">
                         <Image
                           layout="responsive"
                           height={100}
@@ -202,12 +203,12 @@ function MainCategories() {
                           src="/img/dummy/img6.jpg"
                           alt="alt title"
                         />
-                      </a>
+                      </Link>
                       <div className="py-0 sm:py-3 pl-3 sm:pl-0">
                         <h3 className="text-lg font-bold leading-tight mb-2 text-black">
-                          <a href="#" className="text-black">
+                          <Link href="news/detail/1" className="text-black">
                             5 Tips to Save Money Booking Your Next Hotel Room
-                          </a>
+                          </Link>
                         </h3>
                         <p className="hidden md:block text-gray-600 leading-tight mb-1">
                           This is a wider card with supporting text below as a

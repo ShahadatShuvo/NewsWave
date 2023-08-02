@@ -1,12 +1,12 @@
+import SingleNews from "@/componants/single-news";
 import React from "react";
 
-function SingleNews(props: any) {
+function NewsDetail({ params }: { params: { slug: string } }) {
   return (
     <div>
-      <h1>Single News</h1>
-      <p>Slug: {props.slug}</p>
+      <SingleNews />
     </div>
   );
 }
 
-export default SingleNews;
+export default NewsDetail;
