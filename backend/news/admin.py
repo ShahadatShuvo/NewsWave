@@ -5,4 +5,5 @@ from .models import Post
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('title', 'author', 'description', 'created_at',
+                    'updated_at', 'img_preview')
