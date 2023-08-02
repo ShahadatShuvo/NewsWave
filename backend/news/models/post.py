@@ -10,7 +10,7 @@ class Post(models.Model):
     author = models.ForeignKey(
         settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, related_name="posts")
     category = models.ManyToManyField(Category, blank=True)
-    description = models.TextField(null=True, blank=True)
+    short_description = models.TextField(null=True, blank=True)
     content = RichTextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
