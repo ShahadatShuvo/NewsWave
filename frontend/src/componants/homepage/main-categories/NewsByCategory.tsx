@@ -1,25 +1,26 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
-export default async function NewsByCategory({ name }: { name: string }) {
-  async function getProjects() {
-    const res = await fetch(`${apiUrl}/api/news/posts/${name}`);
+export default function NewsByCategory({ name }: { name: string }) {
+  const [newsList, setNewsList] = React.useState([]);
 
-    if (!res.ok) {
-      throw new Error(res.statusText);
-    }
-
-    const newsList = await res.json();
-
-    return newsList.results;
-  }
-  const newsList = await getProjects();
-
-  console.log("cat name:", name);
-  console.log("newsList:", newsList);
+  useEffect(() => {
+    const getNewsByCategory = async () => {
+      const res = await fetch(`${apiUrl}/api/news/posts/${name}`);
+      if (!res.ok) {
+        console.log("error");
+      } else {
+        const data = await res.json();
+        setNewsList(data.results);
+      }
+    };
+    getNewsByCategory();
+  }, [name]);
 
   return (
     <div>
@@ -31,18 +32,21 @@ export default async function NewsByCategory({ name }: { name: string }) {
               className="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100"
             >
               <div className="flex flex-row sm:block hover-img">
-                <Link href="/news/detail/1">
+                <Link href={`/news/detail/${news.id}`}>
                   <Image
                     height={100}
                     width={100}
                     className="max-w-full w-full mx-auto"
-                    src="/img/dummy/img6.jpg"
+                    src={"/img/dummy/img6.jpg"}
                     alt="alt title"
                   />
                 </Link>
                 <div className="py-0 sm:py-3 pl-3 sm:pl-0">
                   <h3 className="text-lg font-bold leading-tight mb-2 text-black">
-                    <Link href="news/detail/1" className="text-black">
+                    <Link
+                      href={`/news/detail/${news.id}`}
+                      className="text-black"
+                    >
                       {news.title}
                     </Link>
                   </h3>

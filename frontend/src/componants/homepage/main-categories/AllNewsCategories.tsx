@@ -33,7 +33,7 @@ export default async function AllNewsCategories() {
                 <NewsByCategory name={category.name} />
               </div>
 
-              {index % 3 === 0 && (
+              {index % 3 === 0 ? (
                 <div className="flex-shrink max-w-full w-full lg:w-1/3 lg:pl-8 lg:pt-14 lg:pb-8 order-first lg:order-last">
                   <div className="w-full bg-gray-50 h-full">
                     <div className="text-sm py-6 sticky">
@@ -55,7 +55,7 @@ export default async function AllNewsCategories() {
                     </div>
                   </div>
                 </div>
-              )}
+              ) : null}
             </div>
           </div>
         </div>
