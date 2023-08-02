@@ -32,7 +32,7 @@ export default function NewsByCategory({ name }: { name: string }) {
               className="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100"
             >
               <div className="flex flex-row sm:block hover-img">
-                <Link href="/news/detail/1">
+                <Link href={`/news/detail/${news.id}`}>
                   <Image
                     height={100}
                     width={100}
@@ -43,7 +43,10 @@ export default function NewsByCategory({ name }: { name: string }) {
                 </Link>
                 <div className="py-0 sm:py-3 pl-3 sm:pl-0">
                   <h3 className="text-lg font-bold leading-tight mb-2 text-black">
-                    <Link href="news/detail/1" className="text-black">
+                    <Link
+                      href={`/news/detail/${news.id}`}
+                      className="text-black"
+                    >
                       {news.title}
                     </Link>
                   </h3>
