@@ -14,4 +14,5 @@ class PostAdmin(admin.ModelAdmin):
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('name', 'img_preview', 'created_at', 'updated_at')
+    list_display = ('name', 'img_preview', 'description',
+                    'created_at', 'updated_at')
