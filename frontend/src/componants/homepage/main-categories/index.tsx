@@ -2,11 +2,12 @@ import Image from "next/image";
 import "../../../utils/css/style.css";
 import "../../../utils/css/theme.css";
 import Link from "next/link";
+import NewsByCategory from "./NewsByCategory";
 function MainCategories() {
   return (
     <div className="my-8">
       <main id="content">
-        <div className="bg-gray-50 py-4   hidden">
+        {/* <div className="bg-gray-50 py-4   hidden">
           <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
             <div className="mx-auto table text-center text-sm">
               <a className="uppercase" href="#">
@@ -23,7 +24,9 @@ function MainCategories() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
+
+        {/* category section start  */}
 
         <div className="bg-white py-6">
           <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
@@ -180,8 +183,15 @@ function MainCategories() {
             </div>
           </div>
         </div>
+        {/* category section end  */}
 
-        <div className="bg-white text-gray-700">
+        {/* news by category section start  */}
+        <div>
+          <NewsByCategory />
+        </div>
+        {/* news by category section end */}
+
+        {/* <div className="bg-white text-gray-700">
           <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
             <div className="flex flex-row flex-wrap">
               <div className="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
@@ -1090,7 +1100,7 @@ function MainCategories() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </main>
     </div>
   );
