@@ -3,7 +3,7 @@ from django.utils.html import mark_safe
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
     description = models.TextField(null=True, blank=True)
     image_url = models.ImageField(upload_to='category/', null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
