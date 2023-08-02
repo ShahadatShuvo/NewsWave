@@ -10,7 +10,7 @@ export default function Home() {
       <div className="my-8">
         <MainCategories />
       </div>
-      {/* <SingleNews />  */}
+
       <Footer />
     </div>
   );
