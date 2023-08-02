@@ -1,25 +1,26 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { use, useEffect } from "react";
 
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
-export default async function NewsByCategory({ name }: { name: string }) {
-  async function getProjects() {
-    const res = await fetch(`${apiUrl}/api/news/posts/${name}`);
+export default function NewsByCategory({ name }: { name: string }) {
+  const [newsList, setNewsList] = React.useState([]);
 
-    if (!res.ok) {
-      throw new Error(res.statusText);
-    }
-
-    const newsList = await res.json();
-
-    return newsList.results;
-  }
-  const newsList = await getProjects();
-
-  console.log("cat name:", name);
-  console.log("newsList:", newsList);
+  useEffect(() => {
+    const getNewsByCategory = async () => {
+      const res = await fetch(`${apiUrl}/api/news/posts/${name}`);
+      if (!res.ok) {
+        console.log("error");
+      } else {
+        const data = await res.json();
+        setNewsList(data.results);
+      }
+    };
+    getNewsByCategory();
+  }, [name]);
 
   return (
     <div>
@@ -36,7 +37,7 @@ export default async function NewsByCategory({ name }: { name: string }) {
                     height={100}
                     width={100}
                     className="max-w-full w-full mx-auto"
-                    src="/img/dummy/img6.jpg"
+                    src={"/img/dummy/img6.jpg"}
                     alt="alt title"
                   />
                 </Link>
