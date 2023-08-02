@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { use, useEffect } from "react";
+import React, { useEffect } from "react";
 
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
