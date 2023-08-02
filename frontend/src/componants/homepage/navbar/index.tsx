@@ -2,6 +2,7 @@
 import { useState } from "react";
 import "../../../utils/css/style.css";
 import "../../../utils/css/theme.css";
+import Link from "next/link";
 
 function Navbar() {
   const [showHamburger, setshowHamburger] = useState(false);
@@ -145,12 +146,11 @@ function Navbar() {
                           style={{ minWidth: "12rem" }}
                         >
                           <li className="relative hover:bg-gray-50">
-                            <a
-                              className="block py-2 px-6 border-b border-gray-100"
-                              href="single.html"
-                            >
-                              Post default
-                            </a>
+                            <Link href="/news/detail/1">
+                              <p className="block py-2 px-6 border-b border-gray-100">
+                                Post default
+                              </p>
+                            </Link>
                           </li>
                           <li className="relative hover:bg-gray-50">
                             <a
