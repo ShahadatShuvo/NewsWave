@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',  # new
     'rest_framework',  # new
+    'django_filters',  # new
     'account',  # new
     'news',  # new
     'ckeditor',  # new
@@ -148,3 +149,5 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
 ]
+
+FILTERS_DISABLE_HELP_TEXT = True
